@@ -6,7 +6,6 @@ package com.novacalculadora.app;
 public class App {
     public static void main(String[] args) throws Exception {
 
-
         // instancia scanner
 
 Scanner leia = new Scanner((System.in));
@@ -17,7 +16,6 @@ Scanner leia = new Scanner((System.in));
 double x;
 double y;
 double resultado = 0.0;
-int opcao = 0;
 String operacao;
 
 // FIXEME: loop 
@@ -35,12 +33,15 @@ do {
     operacao = leia.nextLine();
 
 
-if (operacao !="7") {
+if (!operacao.equals ("7"))  {
+    // entrada de dados
 System.out.println("informe o valor de x:");
 x = leia.nextDouble();
 System.out.println("informe o valor de y:");
 y = leia.nextDouble();
 
+
+leia.nextLine(); // todo
 
 switch (operacao) {
     case "1":
@@ -71,12 +72,9 @@ switch (operacao) {
 System.out.println("Resultado:" + resultado);
 }
 
-else {
-    opcao = Integer.parseInt(operacao);
-}
-// limpeza de buffer
-leia.nextLine();
-  }  while(opcao != 7);
+
+
+  }  while(!operacao.equals("7"));
 
 
 // FECHA OBJETO
