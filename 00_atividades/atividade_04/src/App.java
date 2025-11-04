@@ -40,6 +40,9 @@ System.out.println("Sala 3 - " + salas [2] + " - 14 anos");
 System.out.println("Sala 4 - " + salas [3] + " - 16 anos");
 System.out.println("Sala 5 - " + salas [4] + " - 18 anos");
 sala = leia.nextLine();
+
+todo terminar programa
+
 } while (idade < idadeMinima);
 
 
