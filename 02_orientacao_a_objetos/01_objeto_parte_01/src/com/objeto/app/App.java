@@ -22,7 +22,7 @@ public class App {
 
  // saida de dados
  
-usuario.exibirDados();
+usuario.exibirDados();z
 
         //fecha objeto leia
 
