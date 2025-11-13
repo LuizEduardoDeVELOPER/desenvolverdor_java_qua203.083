@@ -20,7 +20,7 @@ opcao = JOptionPane.showInputDialog(
     null, 
     "SELECIONE UMA OPÇÃO", 
     "COMBUSTIVEL",
-     0, 
+     JOptionPane.INFORMATION_MESSAGE, 
      null, 
      opcoes, 
      opcoes[0]
