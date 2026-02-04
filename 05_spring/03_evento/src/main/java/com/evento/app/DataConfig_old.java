@@ -9,9 +9,14 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-@Configuration
-public class DataConfig {
 
+
+@Configuration
+public class DataConfig_old {
+
+
+    // @Bean
+    // public DataSource dataSource()
     @Bean
     public DataSource dataSource() {
 
@@ -23,6 +28,10 @@ public class DataConfig {
 
         return dataSource;
     }
+
+
+// @Bean
+    // public JpaVendorAdapter jpaVendorAdapter() { ... }
 
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
