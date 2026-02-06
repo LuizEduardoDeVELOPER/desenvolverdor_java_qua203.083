@@ -21,6 +21,14 @@
   <div class="col-sm-10">
     <input type="password" class="form-control" id="inputPassword">
     
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+
+<a th:href="@{/editarEvento/{id}(id=$(evento.idEvento))}" class="card-link"> Editar</a>
+    <a href="#" class="card-link">Excluir </a>
   </div>
 </div>
 </body>
