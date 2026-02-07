@@ -51,7 +51,32 @@ RedirectAttributes attributes) {
 csr.save(evento);
 
 return "redirect: /alteracaoSucesso"; 
+
 }
+
+
+@RequestMapping("/alteracaoSucesso")
+public  String alteracaoSucesso(){
+return "editar-sucesso"
+;
+}
+
+
+@RequestMapping ("/confirmaExclusao/{/idEvento}")
+public ModelAndView confirmarExclusao(@PathVariable("idEvento") long idEvento){
+
+    Evento evento = csr.findByIdEvento(idEvento);
+    ModelAndView mv = new ModelAndView("excluir-evento");
+    mv.addObject("evento", evento);
+    return mv; 
+}
+
+@RequestMapping ("/excluirEvento")
+public String excluirEvento(long idEvento)
+Evento evento = csr.findByIdEvento(idEvento);
+csr.delete(evento);
+return "redirect:/";
+
     }
 
 
